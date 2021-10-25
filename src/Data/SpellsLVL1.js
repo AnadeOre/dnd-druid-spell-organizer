@@ -56,8 +56,7 @@ const spellsLVL1 = [
     index: "create-or-destroy-water",
     name: "Create or Destroy Water",
     url: "/api/spells/create-or-destroy-water",
-    shortdesc:
-      "Create or destroy up to 10 gallons of water. Alternatively, create 30 ft of rain or destroy 30 ft of fog.",
+    shortdesc: "Create or destroy up to 10 gallons of water.",
     desc: [
       "You either create or destroy water.",
       "Create Water.",
@@ -82,8 +81,7 @@ const spellsLVL1 = [
     index: "cure-wounds",
     name: "Cure Wounds",
     url: "/api/spells/cure-wounds",
-    shortdesc:
-      "Heals a target by 1d8+your Wis modifier. Can be cast at higher levels for an additional 1d8 per level above 2nd",
+    shortdesc: "Heals a target by 1d8+your Wis modifier.",
     desc: [
       "A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.",
     ],
@@ -189,7 +187,7 @@ const spellsLVL1 = [
     name: "Faerie Fire",
     url: "/api/spells/faerie-fire",
     shortdesc:
-      "Outlines targets in a 20 ft cube in colored light. Creatures must make a Cha save to avoid. Attacks against outlined creatures have advantage.",
+      "Outlines targets in a 20 ft cube in colored light. Attacks against outlined creatures have advantage.",
     desc: [
       "Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius.",
       "Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can't benefit from being invisible.",
@@ -261,7 +259,7 @@ const spellsLVL1 = [
     name: "Healing Word",
     url: "/api/spells/healing-word",
     shortdesc:
-      "A creature of your choice within range regains hit points equal to 1d4 + Wis. At higher levels increases 1d4 per level above 1st.",
+      "A creature of your choice within range regains hit points equal to 1d4 + Wis.",
     desc: [
       "A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs.",
     ],
