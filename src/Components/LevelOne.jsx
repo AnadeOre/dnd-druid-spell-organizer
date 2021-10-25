@@ -6,7 +6,7 @@ import "../Styles/LevelOne.scss";
 export const LevelOne = () => {
   return (
     <div className='spells-container '>
-      <h2 className='Spells-Level-title'>Level One spells</h2>
+      <h2 className='Spells-Level1-title'>Level One spells</h2>
       <div className='separator lvl1'></div>
       <div className='spells-content'>
         {spellsLVL1.map((lvl1spell) => (

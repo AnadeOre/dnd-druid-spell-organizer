@@ -1,5 +1,13 @@
 $cantrip: #b10000;
-$lvl1: #556b2f;
+$lvl1: #0e4d0e;
+$lvl2: #4b0082;
+$lvl3: #ff8800;
+$lvl4: #005bc4;
+$lvl5: #000000;
+$lvl6: #c2c224;
+$lvl7: #03c003;
+$lvl8: #87d4ee;
+$lvl9: #e798e1;
 
 .spell-name {
   text-align: center;
@@ -37,5 +45,29 @@ $lvl1: #556b2f;
   }
   &.lvl1 {
     border: 2px solid $lvl1;
+  }
+  &.lvl2 {
+    border: 2px solid $lvl2;
+  }
+  &.lvl3 {
+    border: 2px solid $lvl3;
+  }
+  &.lvl4 {
+    border: 2px solid $lvl4;
+  }
+  &.lvl5 {
+    border: 2px solid $lvl5;
+  }
+  &.lvl6 {
+    border: 2px solid $lvl6;
+  }
+  &.lvl7 {
+    border: 2px solid $lvl7;
+  }
+  &.lvl8 {
+    border: 2px solid $lvl8;
+  }
+  &.lvl79 {
+    border: 2px solid $lvl9;
   }
 }

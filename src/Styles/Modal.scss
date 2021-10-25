@@ -1,5 +1,13 @@
 $cantrip: #b10000;
-$lvl1: #556b2f;
+$lvl1: #0e4d0e;
+$lvl2: #4b0082;
+$lvl3: #ff8800;
+$lvl4: #005bc4;
+$lvl5: #000000;
+$lvl6: #c2c224;
+$lvl7: #03c003;
+$lvl8: #87d4ee;
+$lvl9: #e798e1;
 
 .modalContainer {
   position: fixed;
@@ -27,6 +35,30 @@ $lvl1: #556b2f;
     &.lvl1 {
       border: 8px solid $lvl1;
     }
+    &.lvl2 {
+      border: 8px solid $lvl2;
+    }
+    &.lvl3 {
+      border: 8px solid $lvl3;
+    }
+    &.lvl4 {
+      border: 8px solid $lvl4;
+    }
+    &.lvl5 {
+      border: 8px solid $lvl5;
+    }
+    &.lvl6 {
+      border: 8px solid $lvl6;
+    }
+    &.lvl7 {
+      border: 8px solid $lvl7;
+    }
+    &.lvl8 {
+      border: 8px solid $lvl8;
+    }
+    &.lvl9 {
+      border: 8px solid $lvl9;
+    }
   }
 
   .modal {
@@ -43,12 +75,10 @@ $lvl1: #556b2f;
       padding-bottom: 1rem;
     }
     &-chars {
-      /*border-bottom: 1px solid black;*/
       padding-bottom: 2rem;
     }
 
     &-content {
-      /*border-bottom: 1px solid black;*/
       padding: 2rem 0;
     }
   }
@@ -82,6 +112,30 @@ li {
 
   &.lvl1 {
     border-color: transparent transparent $lvl1 transparent;
+  }
+  &.lvl2 {
+    border-color: transparent transparent $lvl2 transparent;
+  }
+  &.lvl3 {
+    border-color: transparent transparent $lvl3 transparent;
+  }
+  &.lvl4 {
+    border-color: transparent transparent $lvl4 transparent;
+  }
+  &.lvl5 {
+    border-color: transparent transparent $lvl5 transparent;
+  }
+  &.lvl6 {
+    border-color: transparent transparent $lvl6 transparent;
+  }
+  &.lvl7 {
+    border-color: transparent transparent $lvl7 transparent;
+  }
+  &.lvl8 {
+    border-color: transparent transparent $lvl8 transparent;
+  }
+  &.lvl9 {
+    border-color: transparent transparent $lvl9 transparent;
   }
 }
 

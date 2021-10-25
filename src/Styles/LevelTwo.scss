@@ -1,18 +1,18 @@
-$lvl1: #0e4d0e;
+$lvl2: #4b0082;
 
 .spells-container {
   width: 90%;
   margin: 8px;
 }
 
-.Spells-Level1-title {
+.Spells-Level2-title {
   height: 32px;
   padding-left: 8px;
   padding-right: 8px;
   font-variant: small-caps;
   font-weight: bold;
   background-color: inherit;
-  color: $lvl1;
+  color: $lvl2;
   font-size: 16pt;
   margin-bottom: -5px;
 }
@@ -25,7 +25,7 @@ $lvl1: #0e4d0e;
   justify-content: center;
 }
 
-.level1 {
+.level2 {
   width: 30%;
   color: black;
   padding: 8px;
@@ -36,7 +36,7 @@ $lvl1: #0e4d0e;
     ),
     url("../Images/Paper.jpg");
   margin: 5px 5px;
-  border: 3px solid $lvl1;
+  border: 3px solid $lvl2;
 }
 
 .spells-content:nth-child(even) {
