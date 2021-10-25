@@ -17,14 +17,15 @@ export const Spell = ({ props }) => {
     range,
     level,
   } = props;
+  const buttonBorder = `spell-button lvl${level}`;
   return (
     <div className='spell'>
       <h4 className='spell-name'>{name}</h4>
       <div className='spell-desc-container'>
         <p className='spell-desc'>{shortdesc}</p>
       </div>
-      <button className='spell-button' onClick={() => Toggle()}>
-        more
+      <button className={buttonBorder} onClick={() => Toggle()}>
+        More
       </button>
       {modal ? (
         <SpellModal

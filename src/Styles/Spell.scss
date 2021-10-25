@@ -1,4 +1,5 @@
 $cantrip: #b10000;
+$lvl1: #556b2f;
 
 .spell-name {
   text-align: center;
@@ -27,9 +28,15 @@ $cantrip: #b10000;
   width: 80px;
   height: 25px;
   border-radius: 5px;
-  border: 2px solid $cantrip;
   background-color: transparent;
   font-family: Lora, "Calisto MT", "Bookman Old Style", Bookman,
     "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia,
     serif;
+
+  &.lvl0 {
+    border: 2px solid $cantrip;
+  }
+  &.lvl1 {
+    border: 2px solid $lvl1;
+  }
 }

@@ -1,4 +1,5 @@
 $cantrip: #b10000;
+$lvl1: #556b2f;
 
 .modalContainer::after {
   opacity: 0.5;
@@ -28,10 +29,13 @@ $cantrip: #b10000;
     padding: 9px;
     overflow: hidden;
     border-radius: 50px;
-  }
 
-  .lvl0 {
-    border: 8px solid $cantrip;
+    &.lvl0 {
+      border: 8px solid $cantrip;
+    }
+    &.lvl1 {
+      border: 8px solid $lvl1;
+    }
   }
 
   .modal {
@@ -74,10 +78,18 @@ li {
 }
 
 .separator {
+  margin-bottom: 20px;
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 0 0px 5px 20vw;
-  border-color: transparent transparent $cantrip transparent;
   transform: rotate(180deg);
+
+  &.lvl0 {
+    border-color: transparent transparent $cantrip transparent;
+  }
+
+  &.lvl1 {
+    border-color: transparent transparent $lvl1 transparent;
+  }
 }
