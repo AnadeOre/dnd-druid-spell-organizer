@@ -1,0 +1,40 @@
+$cantrip: #b10000;
+
+.cantripContainer {
+  background-color: $cantrip;
+  border: 8px solid$cantrip;
+  border-radius: 8px;
+  box-sizing: border-box;
+  position: relative;
+  width: 90%;
+  margin: 8px;
+  page-break-inside: avoid;
+}
+
+.cantrip-title {
+  color: $cantrip;
+  height: 32px;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-variant: small-caps;
+  font-weight: bold;
+  background-color: inherit;
+  color: white;
+  font-size: 16pt;
+}
+
+.cantrip-content {
+  color: black;
+  padding: 8px;
+  border-radius: 8px;
+  margin-top: 0;
+  background-color: white;
+  border-color: inherit;
+  font-size: inherit;
+  display: flex;
+  flex-direction: row;
+}
+
+.cantrip {
+  width: 35%;
+}

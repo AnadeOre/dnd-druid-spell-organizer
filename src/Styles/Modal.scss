@@ -1,0 +1,71 @@
+$cantrip: #b10000;
+
+.modalContainer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(216, 215, 215, 0.904);
+
+  .border {
+    background-color: rgba(158, 158, 158, 0.527);
+    width: 30.2vw;
+    height: 80.2vh;
+    padding: 9px;
+    overflow: hidden;
+    border-radius: 50px;
+  }
+
+  .lvl0 {
+    border: 2px solid $cantrip;
+  }
+
+  .modal {
+    width: 30vw;
+    height: 80vh;
+    padding: 2rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+
+    &-title {
+      text-align: center;
+      border-bottom: 1px solid black;
+      padding-bottom: 1rem;
+    }
+
+    &-close {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    &-chars {
+      border-bottom: 1px solid black;
+      padding-bottom: 2rem;
+    }
+
+    &-content {
+      border-bottom: 1px solid black;
+      padding: 2rem 0;
+    }
+  }
+}
+
+.bold {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+li {
+  margin: 2px;
+}
+
+.desctitle {
+  text-align: center;
+  margin: 5px auto;
+}
