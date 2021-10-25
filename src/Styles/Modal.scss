@@ -1,10 +1,6 @@
 $cantrip: #b10000;
 $lvl1: #556b2f;
 
-.modalContainer::after {
-  opacity: 0.5;
-}
-
 .modalContainer {
   position: fixed;
   top: 0;
@@ -14,16 +10,11 @@ $lvl1: #556b2f;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../Images/Paper.jpg");
-  background-size: cover;
+  background: rgba(255, 255, 255, 0.377);
   z-index: 1;
 
   .border {
-    background: linear-gradient(
-        rgba(255, 255, 255, 0.678),
-        rgba(255, 255, 255, 0.678)
-      ),
-      url("../Images/Paper.jpg");
+    background: url("../Images/Paper.jpg");
     width: 30.2vw;
     height: 80.2vh;
     padding: 9px;
@@ -92,4 +83,16 @@ li {
   &.lvl1 {
     border-color: transparent transparent $lvl1 transparent;
   }
+}
+
+.savings {
+  padding-bottom: 20px;
+}
+
+.damageHigherLevels {
+  margin-left: 20px;
+}
+
+.damage {
+  padding-bottom: 10px;
 }

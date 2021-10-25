@@ -16,6 +16,14 @@ export const Spell = ({ props }) => {
     duration,
     range,
     level,
+    show,
+    higher_level,
+    material,
+    ritual,
+    area_of_effect,
+    damage,
+    dc,
+    heal_at_slot_level,
   } = props;
   const buttonBorder = `spell-button lvl${level}`;
   return (
@@ -27,20 +35,25 @@ export const Spell = ({ props }) => {
       <button className={buttonBorder} onClick={() => Toggle()}>
         More
       </button>
-      {modal ? (
-        <SpellModal
-          show={modal}
-          close={Toggle}
-          name={name}
-          desc={desc}
-          castingTime={casting_time}
-          concentration={concentration}
-          components={components}
-          duration={duration}
-          range={range}
-          level={level}
-        />
-      ) : null}
+      <SpellModal
+        show={modal}
+        close={Toggle}
+        name={name}
+        desc={desc}
+        higher_level={higher_level}
+        material={material}
+        ritual={ritual}
+        castingTime={casting_time}
+        area_of_effect={area_of_effect}
+        dc={dc}
+        damage={damage}
+        heal_at_slot_level={heal_at_slot_level}
+        concentration={concentration}
+        components={components}
+        duration={duration}
+        range={range}
+        level={level}
+      />
     </div>
   );
 };
