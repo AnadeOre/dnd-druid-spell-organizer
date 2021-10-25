@@ -19,7 +19,9 @@ const SpellModal = ({
     <div className='modalContainer' onClick={() => close()}>
       <div className={typeBorder}>
         <div className='modal' onClick={(e) => e.stopPropagation()}>
+          <div className='top'></div>
           <h3 className='modal-title'>{name}</h3>
+          <div className='separator'></div>
           <div className='modal-content'>
             <ul className='modal-chars'>
               <li>
@@ -45,6 +47,7 @@ const SpellModal = ({
                 {components}
               </li>
             </ul>
+            <div className='separator'></div>
             <div className='modal-description'>
               <ul>
                 <h5 className='bold desctitle'>Description:</h5>
@@ -54,6 +57,7 @@ const SpellModal = ({
               </ul>
             </div>
           </div>
+          <div className='separator'></div>
         </div>
       </div>
     </div>

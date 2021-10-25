@@ -7,10 +7,11 @@ export const Cantrips = () => {
   return (
     <div className='cantripContainer'>
       <h2 className='cantrip-title'>Cantrips</h2>
+      <div className='separator'></div>
       <div className='cantrip-content'>
         {spellsLVL0.map((cantrip) => (
           <div className='cantrip'>
-            <Spell props={cantrip} />
+            <Spell className='cantripSpell' props={cantrip} />
           </div>
         ))}
       </div>

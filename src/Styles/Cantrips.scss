@@ -1,5 +1,5 @@
 $cantrip: #b10000;
-
+/*
 .cantripContainer {
   background-color: $cantrip;
   border: 8px solid$cantrip;
@@ -9,27 +9,26 @@ $cantrip: #b10000;
   width: 90%;
   margin: 8px;
   page-break-inside: avoid;
+}*/
+
+.cantripContainer {
+  width: 90%;
+  margin: 8px;
 }
 
 .cantrip-title {
-  color: $cantrip;
   height: 32px;
   padding-left: 8px;
   padding-right: 8px;
   font-variant: small-caps;
   font-weight: bold;
   background-color: inherit;
-  color: white;
+  color: $cantrip;
   font-size: 16pt;
+  margin-bottom: -5px;
 }
 
 .cantrip-content {
-  color: black;
-  padding: 8px;
-  border-radius: 8px;
-  margin-top: 0;
-  background-color: white;
-  border-color: inherit;
   font-size: inherit;
   display: flex;
   flex-direction: row;
@@ -37,4 +36,31 @@ $cantrip: #b10000;
 
 .cantrip {
   width: 35%;
+  color: black;
+  padding: 8px;
+  border-radius: 8px;
+  margin-top: 0;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.678),
+      rgba(255, 255, 255, 0.678)
+    ),
+    url("../Images/Paper.jpg");
+  margin: 0 5px;
+  border: 3px solid $cantrip;
+}
+
+.cantripSpell::nth-child(2n + 1) {
+  -ms-transform: rotate(0.7deg);
+  -webkit-transform: rotate(0.7deg);
+  transform: rotate(0.7deg);
+}
+
+.separator {
+  margin-bottom: 20px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0px 5px 20vw;
+  border-color: transparent transparent $cantrip transparent;
+  transform: rotate(180deg);
 }
