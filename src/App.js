@@ -1,6 +1,7 @@
 import "./App.scss";
 import { Cantrips } from "./Components/Cantrips";
 import { LevelOne } from "./Components/LevelOne";
+import { LevelThree } from "./Components/LevelThree";
 import { LevelTwo } from "./Components/LevelTwo";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Cantrips />
       <LevelOne />
       <LevelTwo />
+      <LevelThree />
     </div>
   );
 }

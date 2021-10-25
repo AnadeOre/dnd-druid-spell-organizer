@@ -31,16 +31,10 @@ $lvl2: #4b0082;
   padding: 8px;
   border-radius: 8px;
   background: linear-gradient(
-      rgba(255, 255, 255, 0.678),
-      rgba(255, 255, 255, 0.678)
+      rgba(255, 255, 255, 0.397),
+      rgba(255, 255, 255, 0.397)
     ),
     url("../Images/Paper.jpg");
   margin: 5px 5px;
   border: 3px solid $lvl2;
-}
-
-.spells-content:nth-child(even) {
-  -ms-transform: rotate(0.7deg);
-  -webkit-transform: rotate(0.7deg);
-  transform: rotate(0.7deg);
 }
