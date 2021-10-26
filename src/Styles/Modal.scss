@@ -22,7 +22,7 @@ $lvl9: #000000;
   z-index: 1;
 
   .border {
-    background: url("../Images/Paper.jpg");
+    background: url('../Images/Paper.jpg');
     width: 30.2vw;
     height: 80.2vh;
     padding: 9px;
@@ -71,7 +71,7 @@ $lvl9: #000000;
 
     &-title {
       text-align: center;
-      font-size: 25px;
+      font-size: 37px;
       padding-bottom: 1rem;
     }
     &-chars {
@@ -86,7 +86,7 @@ $lvl9: #000000;
 
 .bold {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 30px;
 }
 
 li {
@@ -96,6 +96,7 @@ li {
 .desctitle {
   text-align: center;
   margin: 5px auto;
+  font-size: 32px;
 }
 .separator {
   margin-bottom: 20px;

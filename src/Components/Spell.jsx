@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import SpellModal from "./SpellModal";
-import "../Styles/Spell.scss";
+import React, { useState } from 'react';
+import SpellModal from './SpellModal';
+import '../Styles/Spell.scss';
 
 export const Spell = ({ props }) => {
   const {
@@ -28,11 +28,11 @@ export const Spell = ({ props }) => {
   const Toggle = () => setModal(!modal);
   const toggleCheck = () => setPrep(!prep);
 
-  const classes = ["spell"];
-  if (prep) classes.push("prepared");
+  const classes = ['spell'];
+  if (prep) classes.push('prepared');
 
   return (
-    <div className={classes.join(" ")}>
+    <div className={classes.join(' ')}>
       <div className='header'>
         <h4 className='spell-name'>{name}</h4>
         <input type='checkbox' onClick={toggleCheck} />

@@ -1,5 +1,5 @@
-import React from "react";
-import "../Styles/Modal.scss";
+import React from 'react';
+import '../Styles/Modal.scss';
 
 const SpellModal = ({
   show,
@@ -22,41 +22,40 @@ const SpellModal = ({
 }) => {
   const typeBorder = `border lvl${level.toString()}`;
   const separatorColor = `separator lvl${level}`;
-  console.log(damage);
   const levels = [
-    "lvl1",
-    "lvl2",
-    "lvl3",
-    "lvl4",
-    "lvl5",
-    "lvl6",
-    "lvl7",
-    "lvl8",
-    "lvl9",
-    "lvl10",
-    "lvl11",
-    "lvl12",
-    "lvl13",
-    "lvl14",
-    "lvl15",
-    "lvl16",
-    "lvl17",
-    "lvl18",
-    "lvl19",
-    "lvl20",
+    'lvl1',
+    'lvl2',
+    'lvl3',
+    'lvl4',
+    'lvl5',
+    'lvl6',
+    'lvl7',
+    'lvl8',
+    'lvl9',
+    'lvl10',
+    'lvl11',
+    'lvl12',
+    'lvl13',
+    'lvl14',
+    'lvl15',
+    'lvl16',
+    'lvl17',
+    'lvl18',
+    'lvl19',
+    'lvl20',
   ];
   let damageAtLevel;
   if (damage && damage.damage_at_character_level)
     damageAtLevel = damage.damage_at_character_level;
   else if (damage && damage.damage_at_slot_level)
     damageAtLevel = damage.damage_at_slot_level;
-  console.log(higher_level);
+
   return (
     <>
       {show ? (
         <div className='modalContainer' onClick={() => close()}>
           <div className={typeBorder}>
-            <div className='modal' onClick={(e) => e.stopPropagation()}>
+            <div className='modal' onClick={e => e.stopPropagation()}>
               <div className='top'></div>
               <h3 className='modal-title'>{name}</h3>
               <div className={separatorColor}></div>
@@ -102,7 +101,7 @@ const SpellModal = ({
                 <div className='modal-description'>
                   <ul>
                     <h5 className='bold desctitle'>Description:</h5>
-                    {desc.map((description) => (
+                    {desc.map(description => (
                       <li key={Math.random()}>{description}</li>
                     ))}
                     {higher_level ? <li>{higher_level[0]}</li> : null}
@@ -120,8 +119,8 @@ const SpellModal = ({
                         <span className='bold'>DC type</span>: {dc.dc_type.name}
                       </li>
                       <li>
-                        <span className='bold'>On success:</span>{" "}
-                        {dc.dc_success !== "none" ? dc.dc_success : "Nothing"}
+                        <span className='bold'>On success:</span>{' '}
+                        {dc.dc_success !== 'none' ? dc.dc_success : 'Nothing'}
                       </li>
                     </ul>
                   </div>
@@ -135,16 +134,16 @@ const SpellModal = ({
                       <h5 className='bold desctitle'>Damage</h5>
                       <ul>
                         <li>
-                          <span className='bold'>Type</span>:{" "}
+                          <span className='bold'>Type</span>:{' '}
                           {damage.damage_type.name}
                         </li>
                         <li>
-                          <span className='bold'>Casted at higher levels:</span>{" "}
+                          <span className='bold'>Casted at higher levels:</span>{' '}
                           {levels.map((level, index) => (
                             <div>
                               {damageAtLevel[level] ? (
                                 <span className='damageHigherLevels'>
-                                  Level {index + 1}: {damageAtLevel[level]}{" "}
+                                  Level {index + 1}: {damageAtLevel[level]}{' '}
                                 </span>
                               ) : null}
                             </div>
@@ -163,12 +162,12 @@ const SpellModal = ({
                       <h5 className='bold desctitle'>Healing</h5>
                       <ul>
                         <li>
-                          <span className='bold'>Casted at higher levels:</span>{" "}
+                          <span className='bold'>Casted at higher levels:</span>{' '}
                           {levels.map((level, index) => (
                             <div>
                               {heal_at_slot_level[level] ? (
                                 <span className='damageHigherLevels'>
-                                  Level {index + 1}: {heal_at_slot_level[level]}{" "}
+                                  Level {index + 1}: {heal_at_slot_level[level]}{' '}
                                 </span>
                               ) : null}
                             </div>

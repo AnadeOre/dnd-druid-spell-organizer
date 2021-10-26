@@ -12,6 +12,7 @@ $lvl9: #000000;
 .spells-container {
   width: 90%;
   margin: 8px;
+  font-size: 30px;
 }
 
 .Spells-title {
@@ -21,8 +22,8 @@ $lvl9: #000000;
   font-variant: small-caps;
   font-weight: bold;
   background-color: inherit;
-  font-size: 16pt;
-  margin-bottom: -5px;
+  font-size: 34px;
+  margin-bottom: 5px;
 
   &.Level0 {
     color: $cantrip;
@@ -59,10 +60,38 @@ $lvl9: #000000;
 .arrow {
   display: inline-block;
   padding: 3px;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  &:hover {
-    transform: scale(1.2);
+  transform-origin: left;
+  transform: rotate(-45deg) translate(0, -8px);
+  margin-left: 5px;
+  &:hover.arrlvl0 {
+    box-shadow: 1px 2px 5px 1px $cantrip;
+  }
+  &:hover.arrlvl1 {
+    box-shadow: 1px 2px 5px 1px $lvl1;
+  }
+  &:hover.arrlvl2 {
+    box-shadow: 1px 2px 5px 1px $lvl2;
+  }
+  &:hover.arrlvl3 {
+    box-shadow: 1px 2px 5px 1px $lvl3;
+  }
+  &:hover.arrlvl4 {
+    box-shadow: 1px 2px 5px 1px $lvl4;
+  }
+  &:hover.arrlvl5 {
+    box-shadow: 1px 2px 5px 1px $lvl5;
+  }
+  &:hover.arrlvl6 {
+    box-shadow: 1px 2px 5px 1px $lvl6;
+  }
+  &:hover.arrlvl7 {
+    box-shadow: 1px 2px 5px 1px $lvl7;
+  }
+  &:hover.arrlvl8 {
+    box-shadow: 1px 2px 5px 1px $lvl8;
+  }
+  &:hover.arrlvl9 {
+    box-shadow: 1px 2px 5px 1px $lvl9;
   }
 
   &.arrlvl0 {
@@ -128,7 +157,7 @@ $lvl9: #000000;
       rgba(255, 255, 255, 0.397),
       rgba(255, 255, 255, 0.397)
     ),
-    url("../Images/Paper.jpg");
+    url('../Images/Paper.jpg');
   margin: 5px 5px;
 
   &.level0 {

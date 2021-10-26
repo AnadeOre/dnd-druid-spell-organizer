@@ -1,15 +1,15 @@
-import "./App.scss";
-import spellsLVL0 from "./Data/SpellsLVL0";
-import spellsLVL1 from "./Data/SpellsLVL1";
-import spellsLVL2 from "./Data/SpellsLVL2";
-import spellsLVL3 from "./Data/SpellsLVL3";
-import spellsLVL4 from "./Data/SpellsLVL4";
-import spellsLVL5 from "./Data/SpellsLVL5";
-import spellsLVL6 from "./Data/SpellsLVL6";
-import spellsLVL7 from "./Data/SpellsLVL7";
-import spellsLVL8 from "./Data/SpellsLVL8";
-import spellsLVL9 from "./Data/SpellsLVL9";
-import { ListSpells } from "./Components/ListSpells";
+import './App.scss';
+import spellsLVL0 from './Data/SpellsLVL0';
+import spellsLVL1 from './Data/SpellsLVL1';
+import spellsLVL2 from './Data/SpellsLVL2';
+import spellsLVL3 from './Data/SpellsLVL3';
+import spellsLVL4 from './Data/SpellsLVL4';
+import spellsLVL5 from './Data/SpellsLVL5';
+import spellsLVL6 from './Data/SpellsLVL6';
+import spellsLVL7 from './Data/SpellsLVL7';
+import spellsLVL8 from './Data/SpellsLVL8';
+import spellsLVL9 from './Data/SpellsLVL9';
+import { ListSpells } from './Components/ListSpells';
 
 function App() {
   return (
