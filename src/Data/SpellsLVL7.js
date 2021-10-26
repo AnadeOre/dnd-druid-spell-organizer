@@ -113,7 +113,7 @@ const spellsLVL7 = [
     casting_time: "1 minute",
     level: 7,
     heal_at_slot_level: {
-      7: "4d8 + 15",
+      lvl7: "4d8 + 15",
     },
   },
   {

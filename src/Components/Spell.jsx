@@ -16,7 +16,6 @@ export const Spell = ({ props }) => {
     duration,
     range,
     level,
-    show,
     higher_level,
     material,
     ritual,

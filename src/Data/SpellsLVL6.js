@@ -42,10 +42,10 @@ const spellsLVL6 = [
     casting_time: "1 action",
     level: 6,
     heal_at_slot_level: {
-      6: "70",
-      7: "80",
-      8: "90",
-      9: "100",
+      lvl6: "70",
+      lvl7: "80",
+      lvl8: "90",
+      lvl9: "100",
     },
   },
   {
@@ -184,10 +184,10 @@ const spellsLVL6 = [
         url: "/api/damage-types/piercing",
       },
       damage_at_slot_level: {
-        6: "7d8",
-        7: "8d8",
-        8: "9d8",
-        9: "10d8",
+        lvl6: "7d8",
+        lvl7: "8d8",
+        lvl8: "9d8",
+        lvl9: "10d8",
       },
     },
     dc: {

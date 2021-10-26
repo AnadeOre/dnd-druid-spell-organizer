@@ -1,0 +1,114 @@
+$cantrip: #b10000;
+$lvl1: #0e4d0e;
+$lvl2: #9a58f1;
+$lvl3: #ff8800;
+$lvl4: #005bc4;
+$lvl5: #03c003;
+$lvl6: #4b0082;
+$lvl7: #ffad4f;
+$lvl8: #87d4ee;
+$lvl9: #000000;
+
+.spells-container {
+  width: 90%;
+  margin: 8px;
+}
+
+.Spells-title {
+  height: 32px;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-variant: small-caps;
+  font-weight: bold;
+  background-color: inherit;
+  font-size: 16pt;
+  margin-bottom: -5px;
+
+  &.Level0 {
+    color: $cantrip;
+  }
+  &.Level1 {
+    color: $lvl1;
+  }
+  &.Level2 {
+    color: $lvl2;
+  }
+  &.Level3 {
+    color: $lvl3;
+  }
+  &.Level4 {
+    color: $lvl4;
+  }
+  &.Level5 {
+    color: $lvl5;
+  }
+  &.Level6 {
+    color: $lvl6;
+  }
+  &.Level7 {
+    color: $lvl7;
+  }
+  &.Level8 {
+    color: $lvl8;
+  }
+  &.Level9 {
+    color: $lvl9;
+  }
+}
+
+.spells-content {
+  font-size: inherit;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &.cant {
+    flex-wrap: nowrap;
+  }
+}
+
+.spellsContainer {
+  width: 30%;
+  color: black;
+  padding: 8px;
+  border-radius: 8px;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.397),
+      rgba(255, 255, 255, 0.397)
+    ),
+    url("../Images/Paper.jpg");
+  margin: 5px 5px;
+
+  &.level0 {
+    border: 3px solid $cantrip;
+  }
+
+  &.level1 {
+    border: 3px solid $lvl1;
+  }
+  &.level2 {
+    border: 3px solid $lvl2;
+  }
+  &.level3 {
+    border: 3px solid $lvl3;
+  }
+  &.level4 {
+    border: 3px solid $lvl4;
+  }
+  &.level5 {
+    border: 3px solid $lvl5;
+  }
+  &.level6 {
+    border: 3px solid $lvl6;
+  }
+  &.level7 {
+    border: 3px solid $lvl7;
+  }
+  &.level8 {
+    border: 3px solid $lvl8;
+  }
+  &.level9 {
+    border: 3px solid $lvl9;
+  }
+}

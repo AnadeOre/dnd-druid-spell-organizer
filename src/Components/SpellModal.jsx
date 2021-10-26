@@ -50,6 +50,7 @@ const SpellModal = ({
     damageAtLevel = damage.damage_at_character_level;
   else if (damage && damage.damage_at_slot_level)
     damageAtLevel = damage.damage_at_slot_level;
+  console.log(higher_level);
   return (
     <>
       {show ? (
@@ -104,6 +105,7 @@ const SpellModal = ({
                     {desc.map((description) => (
                       <li key={Math.random()}>{description}</li>
                     ))}
+                    {higher_level ? <li>{higher_level[0]}</li> : null}
                   </ul>
                 </div>
               </div>
@@ -153,8 +155,32 @@ const SpellModal = ({
                   </div>
                 </div>
               ) : null}
-              <div className={separatorColor}></div>
+              {heal_at_slot_level ? (
+                <div>
+                  <div className={separatorColor}></div>
+                  <div className='damage'>
+                    <div>
+                      <h5 className='bold desctitle'>Healing</h5>
+                      <ul>
+                        <li>
+                          <span className='bold'>Casted at higher levels:</span>{" "}
+                          {levels.map((level, index) => (
+                            <div>
+                              {heal_at_slot_level[level] ? (
+                                <span className='damageHigherLevels'>
+                                  Level {index + 1}: {heal_at_slot_level[level]}{" "}
+                                </span>
+                              ) : null}
+                            </div>
+                          ))}
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              ) : null}
             </div>
+            <div className={separatorColor}></div>
           </div>
         </div>
       ) : null}

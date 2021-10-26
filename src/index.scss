@@ -1,0 +1,14 @@
+html {
+  background-image: url("./Images/Paper.jpg");
+  background-repeat: no-repeat;
+}
+
+@font-face {
+  font-family: "modesto-bold";
+  src: url("./Styles/ModestoCondensedBold.ttf");
+}
+body {
+  margin: 0;
+  font-family: "modesto-bold";
+  color: black;
+}
