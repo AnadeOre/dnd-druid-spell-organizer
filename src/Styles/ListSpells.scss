@@ -25,6 +25,11 @@ $lvl9: #000000;
   font-size: 34px;
   margin-bottom: 5px;
 
+  &:hover {
+    cursor: pointer;
+    text-shadow: 1px 1px black;
+  }
+
   &.Level0 {
     color: $cantrip;
   }
@@ -63,6 +68,7 @@ $lvl9: #000000;
   transform-origin: left;
   transform: rotate(-45deg) translate(0, -8px);
   margin-left: 5px;
+
   &:hover.arrlvl0 {
     box-shadow: 1px 2px 5px 1px $cantrip;
   }
@@ -93,7 +99,6 @@ $lvl9: #000000;
   &:hover.arrlvl9 {
     box-shadow: 1px 2px 5px 1px $lvl9;
   }
-
   &.arrlvl0 {
     border: solid $cantrip;
     border-width: 0 3px 3px 0;

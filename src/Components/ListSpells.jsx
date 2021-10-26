@@ -16,7 +16,7 @@ export const ListSpells = ({ levelStr, levelInt, spellData, title }) => {
 
   return (
     <div className='spells-container '>
-      <h2 className={titleClass}>
+      <h2 className={titleClass} onClick={toggleOpen}>
         {sectionTitle} <div className={arrowClass} onClick={toggleOpen}></div>
       </h2>
 
