@@ -278,12 +278,12 @@ const spellsLVL4 = [
         url: '/api/damage-types/bludgeoning',
       },
       damage_at_slot_level: {
-        4: '2d8 + 4d6',
-        5: '3d8 + 4d6',
-        6: '4d8 + 4d6',
-        7: '5d8 + 4d6',
-        8: '6d8 + 4d6',
-        9: '7d8 + 4d6',
+        lvl4: '2d8 + 4d6',
+        lvl5: '3d8 + 4d6',
+        lvl6: '4d8 + 4d6',
+        lvl7: '5d8 + 4d6',
+        lvl8: '6d8 + 4d6',
+        lvl9: '7d8 + 4d6',
       },
     },
     dc: {
