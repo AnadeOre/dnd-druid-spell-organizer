@@ -56,6 +56,57 @@ $lvl9: #000000;
   }
 }
 
+.arrow {
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &.arrlvl0 {
+    border: solid $cantrip;
+    border-width: 0 3px 3px 0;
+  }
+  &.arrlvl1 {
+    border: solid $lvl1;
+    border-width: 0 3px 3px 0;
+  }
+  &.arrlvl2 {
+    border: solid $lvl2;
+    border-width: 0 3px 3px 0;
+  }
+  &.arrlvl3 {
+    border: solid $lvl3;
+    border-width: 0 3px 3px 0;
+  }
+  &.arrlvl4 {
+    border: solid $lvl4;
+    border-width: 0 3px 3px 0;
+  }
+  &.arrlvl5 {
+    border: solid $lvl5;
+    border-width: 0 3px 3px 0;
+  }
+  &.arrlvl6 {
+    border: solid $lvl6;
+    border-width: 0 3px 3px 0;
+  }
+  &.arrlvl7 {
+    border: solid $lvl7;
+    border-width: 0 3px 3px 0;
+  }
+  &.arrlvl8 {
+    border: solid $lvl8;
+    border-width: 0 3px 3px 0;
+  }
+  &.arrlvl9 {
+    border: solid $lvl9;
+    border-width: 0 3px 3px 0;
+  }
+}
+
 .spells-content {
   font-size: inherit;
   display: flex;

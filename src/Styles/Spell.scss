@@ -20,6 +20,15 @@ $lvl9: #000000;
   flex-direction: column;
 }
 
+.header {
+  display: flex;
+  flex-direction: row;
+}
+
+input {
+  margin-left: 10px;
+}
+
 .spell-desc-container {
   display: grid;
   height: 110px;

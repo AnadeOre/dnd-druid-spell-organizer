@@ -3,9 +3,6 @@ import SpellModal from "./SpellModal";
 import "../Styles/Spell.scss";
 
 export const Spell = ({ props }) => {
-  const [modal, setModal] = useState(false);
-
-  const Toggle = () => setModal(!modal);
   const {
     name,
     shortdesc,
@@ -24,10 +21,22 @@ export const Spell = ({ props }) => {
     dc,
     heal_at_slot_level,
   } = props;
+  const [modal, setModal] = useState(false);
+  const [prep, setPrep] = useState(false);
   const buttonBorder = `spell-button lvl${level}`;
+
+  const Toggle = () => setModal(!modal);
+  const toggleCheck = () => setPrep(!prep);
+
+  const classes = ["spell"];
+  if (prep) classes.push("prepared");
+
   return (
-    <div className='spell'>
-      <h4 className='spell-name'>{name}</h4>
+    <div className={classes.join(" ")}>
+      <div className='header'>
+        <h4 className='spell-name'>{name}</h4>
+        <input type='checkbox' onClick={toggleCheck} />
+      </div>
       <div className='spell-desc-container'>
         <p className='spell-desc'>{shortdesc}</p>
       </div>
