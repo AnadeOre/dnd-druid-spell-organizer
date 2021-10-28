@@ -36,13 +36,11 @@ export const Spell = ({ props }) => {
 
   return (
     <div className={classes.join(' ')}>
-      <div className='header'>
-        <h4 className='spell-name' onClick={toggleCheck}>
-          {name}
-        </h4>
-        <input type='checkbox' onClick={toggleCheck} />
+      <div className='header' onClick={toggleCheck}>
+        <h4 className='spell-name'>{name}</h4>
+        <input checked={prep} type='checkbox' onClick={toggleCheck} />
       </div>
-      <div className='spell-desc-container'>
+      <div className='spell-desc-container' onClick={toggleCheck}>
         <p className='spell-desc'>{shortdesc}</p>
       </div>
       <button className={buttonBorder} onClick={() => Toggle()}>
