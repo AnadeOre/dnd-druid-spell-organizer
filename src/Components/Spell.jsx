@@ -26,7 +26,10 @@ export const Spell = ({ props }) => {
   const buttonBorder = `spell-button lvl${level}`;
 
   const Toggle = () => setModal(!modal);
-  const toggleCheck = () => setPrep(!prep);
+
+  const toggleCheck = () => {
+    setPrep(!prep);
+  };
 
   const classes = ['spell'];
   if (prep) classes.push('prepared');
