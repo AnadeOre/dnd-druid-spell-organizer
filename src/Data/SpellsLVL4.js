@@ -60,8 +60,7 @@ const spellsLVL4 = [
     index: 'conjure-minor-elementals',
     name: 'Conjure Minor Elementals',
     url: '/api/spells/conjure-minor-elementals',
-    shortdesc:
-      'Summons either one elemental of CR 2 or lower, 2 of CR 1 or lower, 4 of CR ½ or lower, or 8 of CR ¼ or lower.',
+    shortdesc: 'Summons either one of the options.',
     desc: [
       'You summon elementals that appear in unoccupied spaces that you can see within range. You choose one the following options for what appears:',
       '- One elemental of challenge rating 2 or lower',
@@ -114,8 +113,7 @@ const spellsLVL4 = [
     index: 'control-water',
     name: 'Control Water',
     url: '/api/spells/control-water',
-    shortdesc:
-      ' Until the spell ends, you control any freestanding water inside an area you choose that is a cube up to 100 feet on a side',
+    shortdesc: 'You control any freestanding water inside an area you choose',
     desc: [
       'Until the spell ends, you control any freestanding water inside an area you choose that is a cube up to 100 feet on a side. You can choose from any of the following effects when you cast this spell. As an action on your turn, you can repeat the same effect or choose a different one.',
       'Flood.',
@@ -232,7 +230,7 @@ const spellsLVL4 = [
     name: 'Hallucinatory Terrain',
     url: '/api/spells/hallucinatory-terrain',
     shortdesc:
-      'You make natural terrain in a 150-foot cube in range look, sound, and smell like some other sort of natural terrain.',
+      'You make natural terrain look and sound like some other sort of natural terrain.',
     desc: [
       "You make natural terrain in a 150-foot cube in range look, sound, and smell like some other sort of natural terrain. Thus, open fields or a road can be made to resemble a swamp, hill, crevasse, or some other difficult or impassable terrain. A pond can be made to seem like a grassy meadow, a precipice like a gentle slope, or a rock-strewn gully like a wide and smooth road. Manufactured structures, equipment, and creatures within the area aren't changed in appearance.",
       "The tactile characteristics of the terrain are unchanged, so creatures entering the area are likely to see through the illusion. If the difference isn't obvious by touch, a creature carefully examining the illusion can attempt an Intelligence (Investigation) check against your spell save DC to disbelieve it. A creature who discerns the illusion for what it is, sees it as a vague image superimposed on the terrain.",
@@ -304,7 +302,7 @@ const spellsLVL4 = [
     name: 'Locate Creature',
     url: '/api/spells/locate-creature',
     shortdesc:
-      'Describe or name a creature that is familiar to you. You sense the direction to the creature’s location',
+      'Describe or name a creature. You sense the direction to the creature’s location',
     desc: [
       "Describe or name a creature that is familiar to you. You sense the direction to the creature's location, as long as that creature is within 1,000 feet of you. If the creature is moving, you know the direction of its movement.",
       "The spell can locate a specific creature known to you, or the nearest creature of a specific kind (such as a human or a unicorn), so long as you have seen such a creature up close--within 30 feet--at least once. If the creature you described or named is in a different form, such as being under the effects of a polymorph spell, this spell doesn't locate the creature.",

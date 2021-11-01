@@ -100,7 +100,7 @@ const spellsLVL6 = [
     name: 'Sunbeam',
     url: '/api/spells/sunbeam',
     shortdesc:
-      'Creates a 5ft wide, 60 ft long beam of light from your hand that deals damage and blinds affected creatures.',
+      'Creates a beam of light from your hand that deals damage and blinds creatures.',
     desc: [
       "A beam of brilliant light flashes out from your hand in a 5-foot-wide, 60-foot-long line. Each creature in the line must make a constitution saving throw. On a failed save, a creature takes 6d8 radiant damage and is blinded until your next turn. On a successful save, it takes half as much damage and isn't blinded by this spell. Undead and oozes have disadvantage on this saving throw.",
       'You can create a new line of radiance as your action on any turn until the spell ends.',
@@ -143,7 +143,7 @@ const spellsLVL6 = [
     name: 'Transport via Plants',
     url: '/api/spells/transport-via-plants',
     shortdesc:
-      'Creates a magical link between large plants that any creature can travel through',
+      'Creates a link between large plants that any creature can travel through',
     desc: [
       'This spell creates a magical link between a Large or larger inanimate plant within range and another plant, at any distance, on the same plane of existence. You must have seen or touched the destination plant at least once before. For the duration, any creature can step into the target plant and exit from the destination plant by using 5 feet of movement.',
     ],
@@ -159,8 +159,7 @@ const spellsLVL6 = [
     index: 'wall-of-thorns',
     name: 'Wall of Thorns',
     url: '/api/spells/wall-of-thorns',
-    shortdesc:
-      'Creates a wall of thorns that can be up to 60 ft long, 10 ft high, and 5 ft thick or a circle 20 ft in diameter and 5 ft thick',
+    shortdesc: 'Creates a wall of thorns',
     desc: [
       'You create a wall of tough, pliable, tangled brush bristling with needle-sharp thorns. The wall appears within range on a solid surface and lasts for the duration. You choose to make the wall up to 60 feet long, 10 feet high, and 5 feet thick or a circle that has a 20-foot diameter and is up to 20 feet high and 5 feet thick. The wall blocks line of sight.',
       'When the wall appears, each creature within its area must make a dexterity saving throw. On a failed save, a creature takes 7d8 piercing damage, or half as much damage on a successful save.',
@@ -207,8 +206,7 @@ const spellsLVL6 = [
     index: 'wind-walk',
     name: 'Wind Walk',
     url: '/api/spells/wind-walk',
-    shortdesc:
-      'You and 10 creatures become gaseous forms, have a flying speed of 300 ft, and resistance to nonmagical weapon damage.',
+    shortdesc: 'You and 10 creatures become gaseous forms.',
     desc: [
       "You and up to ten willing creatures you can see within range assume a gaseous form for the duration, appearing as wisps of cloud. While in this cloud form, a creature has a flying speed of 300 feet and has resistance to damage from nonmagical weapons. The only actions a creature can take in this form are the Dash action or to revert to its normal form. Reverting takes 1 minute, during which time a creature is incapacitated and can't move. Until the spell ends, a creature can revert to cloud form, which also requires the 1-minute transformation.",
       "If a creature is in cloud form and flying when the effect ends, the creature descends 60 feet per round for 1 minute until it lands, which it does safely. If it can't land after 1 minute, the creature falls the remaining distance.",

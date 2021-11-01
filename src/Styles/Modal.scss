@@ -23,7 +23,7 @@ $lvl9: #000000;
 
   .border {
     background: url('../Images/Paper.jpg');
-    width: 30.2vw;
+    width: 30.2; /*90vw*/
     height: 80.2vh;
     padding: 9px;
     overflow: hidden;
@@ -62,7 +62,7 @@ $lvl9: #000000;
   }
 
   .modal {
-    width: 30vw;
+    width: 30vw; /*88.5vw*/
     height: 80vh;
     padding: 2rem;
     overflow-x: hidden;
@@ -149,4 +149,14 @@ li {
 
 .damage {
   padding-bottom: 10px;
+}
+
+@media (max-width: 1000px) {
+  .border {
+    min-width: 90vw; /*30.2vw;*/
+  }
+
+  .modal {
+    min-width: 88.5vw;
+  }
 }

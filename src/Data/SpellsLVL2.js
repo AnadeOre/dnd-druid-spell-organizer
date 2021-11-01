@@ -24,8 +24,7 @@ const spellsLVL2 = [
     index: 'barkskin',
     name: 'Barkskin',
     url: '/api/spells/barkskin',
-    shortdesc:
-      'Gives a target barklike skin for up to an hour and their AC cannot be less than 16, regardless of any armor.',
+    shortdesc: 'Gives a target barklike skin for up to an hour.',
     desc: [
       "You touch a willing creature. Until the spell ends, the target's skin has a rough, bark-like appearance, and the target's AC can't be less than 16, regardless of what kind of armor it is wearing.",
     ],
@@ -348,7 +347,7 @@ const spellsLVL2 = [
     name: 'Moonbeam',
     url: '/api/spells/moonbeam',
     shortdesc:
-      'Creates a 5 ft wide, 40 ft tall beam that deals 2d10 radiant damage. You can move the beam 60 ft per turn.',
+      'Creates a beam that deals 2d10 damage. You can move the beam 60 ft per turn.',
     desc: [
       'A silvery beam of pale light shines down in a 5-foot radius, 40-foot-high cylinder centered on a point within range. Until the spell ends, dim light fills the cylinder.',
       "When a creature enters the spell's area for the first time on a turn or starts its turn there, it is engulfed in ghostly flames that cause searing pain, and it must make a constitution saving throw. It takes 2d10 radiant damage on a failed save, or half as much damage on a successful one.",
@@ -402,7 +401,7 @@ const spellsLVL2 = [
     name: 'Pass Without Trace',
     url: '/api/spells/pass-without-trace',
     shortdesc:
-      'Each creature 30 ft from you and yourself become shadowy and gain +10 to Dex (stealth) checks',
+      'Each creature 30 ft from you and yourself gain +10 to Dex (stealth) checks',
     desc: [
       "A veil of shadows and silence radiates from you, masking you and your companions from detection. For the duration, each creature you choose within 30 feet of you (including you) has a +10 bonus to Dexterity (Stealth) checks and can't be tracked except by magical means. A creature that receives this bonus leaves behind no tracks or other traces of its passage.",
     ],
@@ -420,7 +419,7 @@ const spellsLVL2 = [
     name: 'Protection from Poison',
     url: '/api/spells/protection-from-poison',
     shortdesc:
-      'Gives target resistance and advantage against poison for 1 hour. Also cures any poison.',
+      'Gives target resistance and advantage against poison. Also cures any poison.',
     desc: [
       'You touch a creature. If it is poisoned, you neutralize the poison. If more than one poison afflicts the target, you neutralize one poison that you know is present, or you neutralize one at random.',
       'For the duration, the target has advantage on saving throws against being poisoned, and it has resistance to poison damage.',
@@ -437,8 +436,7 @@ const spellsLVL2 = [
     index: 'spike-growth',
     name: 'Spike Growth',
     url: '/api/spells/spike-growth',
-    shortdesc:
-      'The ground in a 20-foot radius centered on a point within range twists and sprouts hard spikes and thorns.',
+    shortdesc: 'The ground twists and sprouts hard spikes and thorns.',
     desc: [
       'The ground in a 20-foot radius centered on a point within range twists and sprouts hard spikes and thorns. The area becomes difficult terrain for the duration. When a creature moves into or within the area, it takes 2d4 piercing damage for every 5 feet it travels.',
       'The development of land is camouflaged to look natural. Any creature that does not see the area when the spell is spell casts must make a Wisdom (Perception) opposite the DD backup your fate or it does not recognize the dangerous nature of the ground before entering.',
